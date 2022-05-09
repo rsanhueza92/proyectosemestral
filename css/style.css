@@ -1,0 +1,840 @@
+:root{
+    --principal:#FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+    --blanco: #FFFFFF;
+    --gradiente: #DFE9F3;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    background-image: linear-gradient(to top, var(--gradiente) 0%, var(--blanco) 100% );
+    
+}
+/*Comineza la Pagina de INICIO*/
+.contenedor {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+.fondo-primera-seccion {
+    background: linear-gradient(rgba(68, 13, 13, 0.35), rgba(38,2,2,0.446)), url(/img/Portada.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+    
+}
+.barra-navegacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-decoration: none ;
+}
+nav > a {
+    text-decoration: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: var(--blanco);
+    text-size-adjust: 2px;
+}
+
+nav > a:hover {
+    color:var(--blanco);
+}
+.btn-gold {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: var(--secundario);
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    display: inline-block;
+
+    /* Aplica para Flexbox */
+    align-self: center;
+}
+.frase {
+    text-align: center;
+}
+.wave{
+    position: absolute;
+    bottom: -4%;
+    width: 99%;
+}
+hr {
+    width: 4.5rem;
+    border-color:var(--gradiente);
+}
+.logo {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-stretch: wider;  
+  }
+.titulo {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.titulo > hr {
+    width: 4.5rem;
+    border-color:var(--gradiente);
+}
+
+.primera-seccion-contenido {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.primera-seccion-contenido > p {
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.primera-seccion-contenido > hr {
+    width: 4.5rem;
+    border-color:var(--gradiente);
+}
+.primera-seccion-contenido > h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+}
+.segunda-seccion{
+    background-color: var(--gradiente);
+    min-height: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+}
+.tercera-seccion{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    
+}
+.container-tercera-seccion{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+.img-tercera {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow: hidden;
+}
+.img-tercera > h6 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.img-tercer > p {
+    margin-bottom: 2rem;
+}
+
+.img-tercera > img {
+    max-width: 100%;
+}
+.cuarta-seccion{
+    background: linear-gradient(rgba(68, 13, 13, 0.35), rgba(38,2,2,0.446)), url(/img/Portada2.jpeg) no-repeat center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.cuarta-seccion > h3 {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    
+}
+.slider{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite alternate linear;
+}
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 40%;
+    height: 100%;
+}
+.quinta-seccion {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.quinta-seccion-izquierda {
+    flex: 1;
+}
+.quinta-seccion-izquierda > h3 {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.quinta-seccion-izquierda > p {
+    margin-bottom: 4rem;
+}
+.quinta-seccion-derecha {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px 10px;
+    justify-items: center;
+    align-items: center;
+}
+.quinta-seccion-derecha > img {
+    max-width: 100%;
+}
+.quinta-seccion-izquierda > hr {
+    width: 4.5rem;
+    border-color:var(--gradiente);
+    margin-left: 0;
+    margin-bottom: 3rem;
+}
+.social{
+    position: fixed;
+    right: 0%;
+    top: 200px;
+    z-index: 2000;
+}
+.social ul{
+    list-style: none;
+}
+.social ul li a{
+    display: inline-block;
+    color: #FFF;
+    background: #000;
+    padding: 10px 15px;
+    text-decoration: none;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+.social ul li .icon-facebook2{background:#3b5998 ;}
+.social ul li .icon-whatsapp{background: #00bb2d ;}
+.social ul li .icon-instagram{background: #405DE6 ;}
+.social ul li .icon-twitter{background:#00abf0 ;}
+
+.social ul li a:hover{
+    padding: 10px 30px;
+    background: #000;
+}
+footer {
+    background-color: black;
+    color: white;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+/*Esto es la Pagina Quienes Somos*/
+.fondo-quienes-somos{
+    background: linear-gradient(rgba(68, 13, 13, 0.35), rgba(38,2,2,0.446)), url(/img/Portada2.jpeg) no-repeat center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+}
+
+.mensaje-quienes-somos{
+    background-color:var(--gradiente) ;
+    position: relative;
+    flex-direction: row;
+    text-align:center;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 2%;
+    padding-left: 40%;
+    margin-bottom: 1%;
+}
+.frases-mision-valor-vision {
+    text-align: center;
+}
+.mision-valor-vision{
+    background-color:var(--gradiente) ;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    right: 28%;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 4%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 30%;
+    margin-right: 55%;
+    top: 20px;
+    margin-bottom: 10%;
+}
+
+.container-seccion-de-paginas{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+    margin-top: -46%;
+    padding-right: 8%;
+    
+}
+/*Esto es la Pagina Productos*/
+.fondo-nav-productos{
+    background: linear-gradient(rgba(68, 13, 13, 0.35), rgba(38,2,2,0.446)), url(/img/imagen12.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+}
+.mensaje-galeria-img{
+    background-color:var(--gradiente) ;
+    position: relative;
+    flex-direction: row;
+    text-align: center;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 2%;
+    padding-left: 38%;
+    padding-right: 5%;
+    margin-bottom: 2%;
+    
+}
+.productos{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.productos .carta{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0,0,0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25;
+}
+.productos .carta img{
+    width:330px;
+    height: 220px;
+}
+.productos .carta h4{
+    font-weight: 600;
+}
+.productos .carta p{
+    padding:0 1rem;
+    font-size:16px;
+    font-weight: 300;
+}
+/*Esta es la Pagina Galeria de Imagenes*/
+.fondo-nav-galeria-img{
+    background: linear-gradient(rgba(68, 13, 13, 0.35), rgba(38,2,2,0.446)), url(/img/imagen8.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+}
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background-color: #03afff;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  /*Esta es la pagina de Contacto y Siguenos*/
+  .fondo-nav-contacto{
+    background: linear-gradient(rgba(68, 13, 13, 0.35), rgba(38,2,2,0.446)), url(/img/contacto.jpeg) no-repeat center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+}
+.mensaje-redes{
+    background-color:var(--gradiente) ;
+    position: relative;
+    flex-direction: row;
+    text-align: center;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 2%;
+    padding-left: 38%;
+    padding-right: 5%;
+    margin-bottom: 2%;
+}
+.titulo-contacto {
+    text-align: center;
+}
+.redes-sociales{
+    background-color:rgb(248, 224, 125) ;
+    
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    right: 22%;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 4%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 26%;
+    margin-right: 55%;
+    top: 20px;
+    margin-bottom: 10%;
+}
+.redes-sociales >h5 >a{
+    text-decoration: none;
+    color:#000;
+    
+}
+.redes-sociales >h5 >a:hover{
+    background-color: var(--blanco);
+}
+.formulario .form .form-header .form-title{
+    font-weight: normal;
+    font-family: sans-serif;
+    color:var(--gris);
+    text-align: center;
+    padding: 14px 0;
+}
+.formulario .form .form-header .form-title span{
+    color:var(--gradiente)
+}
+.formulario .form{
+    background-color: var(--gris);
+    width: 98%;
+    max-width: 650px;
+    padding: 35px;
+    padding-top: 5%;
+    bottom: -30%;
+    border-radius: 3px;
+}
+.formulario .form .form-label{
+    display: block;
+    color:var(--gradiente);
+    font-size: 16px;
+    font-family:sans-serif;
+    position: relative;
+}
+.formulario .form .form-input, .form-textarea{
+    background: rgba(0, 0, 0,.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid var(--gradiente) ;
+    width: 100%;
+    padding: 14px 0;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color:#FFF;
+}
+.formulario .form .form-textarea{
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+}
+.formulario .form .btn-submit{
+    width: 100%;
+    font-family: sans-serif;
+    outline: none;
+    background: #fff4bc;
+    font-size: 16px;
+    border: none;
+    color:#222222;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.formulario .form .btn-submit:hover{
+    background: #ddc238;
+}
+h1{
+    font-size: 3.8rem;
+    font-family: 'Water Brush', cursive;
+}
+h2 {
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+h1,h2,h3{
+    text-align: center;
+}
+
+.titulo span {
+    font-size: 2rem;
+}
+
+.contenedor{
+    max-width: 120rem; /* estándar para sitios web que se usarán en PC */
+    margin: 0 auto; /* es lo mismo que escribir margin: 0 auto 0 auto; */
+}
+.nav-bg{
+    background-color: var(--secundario);
+}
+
+.navegacion-principal  {
+    display: flex;
+    flex-direction: column;
+}
+
+.navegacion-principal a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold; /* tambien puede ser 700 */
+}
+
+.navegacion-principal a:hover {
+    background-color: var(--principal);
+    color: var(--gris);
+}
+
+@media (max-width: 800px ) {
+    .wide {
+        grid-column: span 2;
+      }
+    
+      .tall {
+        grid-row: span 2;
+      }
+      
+      .barra-navegacion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        padding-top: 2rem;
+        padding-bottom: 0;
+    }
+    .barra-navegacion > p, nav {
+        text-align: center;
+    }
+
+    .primera-seccion-contenido{
+        margin-top: 2.5rem;
+    }
+
+    .primera-seccion-contenido > h1{
+        font-size: 2.5rem;
+    }
+
+    /*Tercera seccion*/
+
+    .tercera-seccion {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        width: 90%;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat (3, 1fr);
+        column-gap: 1rem;
+        justify-content: space-between;
+    } 
+
+    .container-tercera-seccion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-tercera {
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-tercera > img {
+        max-width: 100%;
+
+    }
+
+    /*Cuarta Seccion*/
+    .cuarta-seccion-izq > hr {
+        width: 4.5rem;
+        
+        border-color:var(--gradiente);
+    }
+    .cuarta-seccion-der{
+        width: 100%;
+    }
+    /*Quinta Seccion*/
+    .quinta-seccion {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .quinta-seccion-derecha{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat (2, 1fr);
+        justify-content: space-between;
+        justify-items: center;
+        text-align: center;
+    }
+}
+
+.hero{
+   background-image: url("../img/hero.jpg"); 
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 400px;
+   position: relative;
+   margin-bottom: 2rem;
+}
+.contenido-hero{
+
+    position: absolute;
+    background-color: rgb(0 0 0 /70%);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+
+.contenido-hero h2, 
+.contenido-hero p {
+    color: var(--blanco);
+}
+
+.boton{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+}
+@media (min-width: 480px){
+    .boton {
+        width: auto;
+    }
+    
+}
+
+.sombra{
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.5);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.5);
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.5);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+@media (min-width: 480px){
+
+    .aprenderemos{
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%; /* divide en porcentajes */
+        grid-template-columns: 1fr 1fr 1fr; /* divide el espacio en 3 fracciones y cada columna toma una fracción */
+        grid-template-columns: repeat (3, 1fr); /* es lo mismo anterior pero mas simple */
+        column-gap: 1rem; /* separación de las columnas*/
+    }
+
+}
+.aprender{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aprender p{
+    line-height: 2; /* Separa el interlineado*/
+    text-align: center;
+}
+.aprender h3{
+    color: var(--secundario);
+    font-weight: normal; /* vuelve el texto a normal*/ 
+}
+.aprender .iconos{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--principal);
+    border-radius: 50%; /* si tengo un cuadrado perfecto, al usar el 50% queda un círculo perfecto*/ 
+    display: flex;
+    justify-content: space-evenly; /* distribuye el contenido separando por la misma cantidad de espacio */
+    align-items: center;
+}
+
+.formulario{
+    background-color: var(--gris);
+    width: min(60rem, 100%); /* utiliza el valor mas pequeño */
+    margin: 0 auto; /* Se utiliza cuando el padre no es display flex para centrar  */
+    padding: 2rem;
+    border-radius: 1rem;
+
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--principal);
+}
+
+@media (min-width:480px) {
+    .contenedor-campos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto 20rem;
+        column-gap: 1rem;
+    }
+    .campo:nth-child(3),  .campo:nth-child(4){ /* Si tiene selectores con una clase repetida, esta funcion permite seleccionar el nro N*/
+        grid-column: 1 / 3; /* Para abarcaar mas de una columa... en este caso va de la 1 a la 3 */
+    }
+
+}
+
+
+.campo {
+    margin-bottom: 1rem;
+}
+.campo label{
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+.input-text{
+    width: 100%;
+    border:none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.boton:hover{
+    cursor: pointer;
+}
+
+
+.w-sm-100{
+    width: 100%;
+}
+
+@media (min-width: 480px) {
+    .w-sm-100{
+        width: auto;
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+.alinear-derecha {
+    justify-content: flex-end;
+}
+
+.campo textarea {
+    height: 15rem;
+}
+
+.footer {
+    text-align: center;
+}
