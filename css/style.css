@@ -27,7 +27,7 @@ body{
     flex-direction: row;
 }
 .fondo-primera-seccion {
-    background: linear-gradient(rgba(68, 13, 13, 0.35), rgba(38,2,2,0.446)), url(/img/Portada.jpg) no-repeat center/cover;
+    background: linear-gradient(rgba(68, 13, 13, 0.35), rgba(38,2,2,0.446)), url(../img/Portada.jpg) no-repeat center/cover;
     background-attachment: fixed;
     height: 100vh;
     color: white;
@@ -165,7 +165,7 @@ hr {
     max-width: 100%;
 }
 .cuarta-seccion{
-    background: linear-gradient(rgba(68, 13, 13, 0.35), rgba(38,2,2,0.446)), url(/img/Portada2.jpeg) no-repeat center/cover;
+    background: linear-gradient(rgba(68, 13, 13, 0.35), rgba(38,2,2,0.446)), url(../img/Portada2.jpeg) no-repeat center/cover;
     background-attachment: fixed;
     height: 100vh;
     color: white;
@@ -293,7 +293,7 @@ footer {
 }
 /*Esto es la Pagina Quienes Somos*/
 .fondo-quienes-somos{
-    background: linear-gradient(rgba(68, 13, 13, 0.35), rgba(38,2,2,0.446)), url(/img/Portada2.jpeg) no-repeat center/cover;
+    background: linear-gradient(rgba(68, 13, 13, 0.35), rgba(38,2,2,0.446)), url(../img/Portada2.jpeg) no-repeat center/cover;
     background-attachment: fixed;
     height: 100vh;
     color: white;
@@ -343,7 +343,7 @@ footer {
 }
 /*Esto es la Pagina Productos*/
 .fondo-nav-productos{
-    background: linear-gradient(rgba(68, 13, 13, 0.35), rgba(38,2,2,0.446)), url(/img/imagen12.jpg) no-repeat center/cover;
+    background: linear-gradient(rgba(68, 13, 13, 0.35), rgba(38,2,2,0.446)), url(../img/imagen12.jpg) no-repeat center/cover;
     background-attachment: fixed;
     height: 100vh;
     color: white;
@@ -396,7 +396,7 @@ footer {
 }
 /*Esta es la Pagina Galeria de Imagenes*/
 .fondo-nav-galeria-img{
-    background: linear-gradient(rgba(68, 13, 13, 0.35), rgba(38,2,2,0.446)), url(/img/imagen8.jpg) no-repeat center/cover;
+    background: linear-gradient(rgba(68, 13, 13, 0.35), rgba(38,2,2,0.446)), url(../img/imagen8.jpg) no-repeat center/cover;
     background-attachment: fixed;
     height: 100vh;
     color: white;
@@ -425,7 +425,7 @@ footer {
   }
   /*Esta es la pagina de Contacto y Siguenos*/
   .fondo-nav-contacto{
-    background: linear-gradient(rgba(68, 13, 13, 0.35), rgba(38,2,2,0.446)), url(/img/contacto.jpeg) no-repeat center/cover;
+    background: linear-gradient(rgba(68, 13, 13, 0.35), rgba(38,2,2,0.446)), url(../img/contacto.jpeg) no-repeat center/cover;
     background-attachment: fixed;
     height: 100vh;
     color: white;
@@ -479,7 +479,29 @@ footer {
 .formulario .form .form-header .form-title span{
     color:var(--gradiente)
 }
+.formulario{
+    background-color: var(--gris);
+    width: min(60rem, 100%); /* utiliza el valor mas pequeño */
+    margin: 0 auto; /* Se utiliza cuando el padre no es display flex para centrar  */
+    padding: 2rem;
+    border-radius: 1rem;
+
+}
+
+.formulario fieldset {
+    border: none;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--principal);
+}
 .formulario .form{
+    position: relative;
     background-color: var(--gris);
     width: 98%;
     max-width: 650px;
@@ -487,6 +509,8 @@ footer {
     padding-top: 5%;
     bottom: -30%;
     border-radius: 3px;
+    justify-content: center;
+    
 }
 .formulario .form .form-label{
     display: block;
@@ -665,176 +689,6 @@ h1,h2,h3{
     }
 }
 
-.hero{
-   background-image: url("../img/hero.jpg"); 
-   background-repeat: no-repeat;
-   background-size: cover;
-   height: 400px;
-   position: relative;
-   margin-bottom: 2rem;
-}
-.contenido-hero{
-
-    position: absolute;
-    background-color: rgb(0 0 0 /70%);
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;  
-}
-
-.contenido-hero h2, 
-.contenido-hero p {
-    color: var(--blanco);
-}
-
-.boton{
-    background-color: var(--secundario);
-    color: var(--blanco);
-    padding: 1rem 3rem;
-    margin-top: 1rem;
-    font-size: 2rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-radius: .5rem;
-    width: 90%;
-    text-align: center;
-    border: none;
-}
-@media (min-width: 480px){
-    .boton {
-        width: auto;
-    }
-    
-}
-
-.sombra{
-    -webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.5);
-    -moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.5);
-    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.5);
-    background-color: var(--blanco);
-    padding: 2rem;
-    border-radius: 1rem;
-}
-
-@media (min-width: 480px){
-
-    .aprenderemos{
-        display: grid;
-        grid-template-columns: 33.3% 33.3% 33.3%; /* divide en porcentajes */
-        grid-template-columns: 1fr 1fr 1fr; /* divide el espacio en 3 fracciones y cada columna toma una fracción */
-        grid-template-columns: repeat (3, 1fr); /* es lo mismo anterior pero mas simple */
-        column-gap: 1rem; /* separación de las columnas*/
-    }
-
-}
-.aprender{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.aprender p{
-    line-height: 2; /* Separa el interlineado*/
-    text-align: center;
-}
-.aprender h3{
-    color: var(--secundario);
-    font-weight: normal; /* vuelve el texto a normal*/ 
-}
-.aprender .iconos{
-    height: 15rem;
-    width: 15rem;
-    background-color: var(--principal);
-    border-radius: 50%; /* si tengo un cuadrado perfecto, al usar el 50% queda un círculo perfecto*/ 
-    display: flex;
-    justify-content: space-evenly; /* distribuye el contenido separando por la misma cantidad de espacio */
-    align-items: center;
-}
-
-.formulario{
-    background-color: var(--gris);
-    width: min(60rem, 100%); /* utiliza el valor mas pequeño */
-    margin: 0 auto; /* Se utiliza cuando el padre no es display flex para centrar  */
-    padding: 2rem;
-    border-radius: 1rem;
-
-}
-
-.formulario fieldset {
-    border: none;
-}
-
-.formulario legend {
-    text-align: center;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 2rem;
-    color: var(--principal);
-}
-
-@media (min-width:480px) {
-    .contenedor-campos {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto auto 20rem;
-        column-gap: 1rem;
-    }
-    .campo:nth-child(3),  .campo:nth-child(4){ /* Si tiene selectores con una clase repetida, esta funcion permite seleccionar el nro N*/
-        grid-column: 1 / 3; /* Para abarcaar mas de una columa... en este caso va de la 1 a la 3 */
-    }
-
-}
 
 
-.campo {
-    margin-bottom: 1rem;
-}
-.campo label{
-    color: var(--blanco);
-    font-weight: bold;
-    margin-bottom: .5rem;
-    display: block;
-}
 
-.input-text{
-    width: 100%;
-    border:none;
-    padding: 1.5rem;
-    border-radius: .5rem;
-}
-
-.boton:hover{
-    cursor: pointer;
-}
-
-
-.w-sm-100{
-    width: 100%;
-}
-
-@media (min-width: 480px) {
-    .w-sm-100{
-        width: auto;
-    }
-}
-
-.flex {
-    display: flex;
-}
-
-.alinear-derecha {
-    justify-content: flex-end;
-}
-
-.campo textarea {
-    height: 15rem;
-}
-
-.footer {
-    text-align: center;
-}
