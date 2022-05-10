@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>::Form/siguenos::</title>
     <link rel="icon" type="image/jpg" href="/img/favicon.ico"/>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="socialbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/socialbar.css">
 </head>
 <body>
 <section>
@@ -15,11 +15,11 @@
             <div class="barra-navegacion">
                 <p class="logo">LUMBER <span style="color:#DFE9F3">JACK </span> </p>
                 <nav>
-                    <a href="/index.html">Inicio</a>
-                    <a href="/quienessomos.html">Quienes Somos</a>
-                    <a href="/productos.html">Productos</a>
-                    <a href="/galeriaimg.html">Galeria de Imagenes</a>
-                    <a href="/contactoysiguenos.html">Contacto/Siguenos</a>  
+                    <a href="index.html">Inicio</a>
+                    <a href="quienessomos.html">Quienes Somos</a>
+                    <a href="productos.html">Productos</a>
+                    <a href="galeriaimg.html">Galeria de Imagenes</a>
+                    <a href="contactoysiguenos.html">Contacto/Siguenos</a>  
                 </nav>
         </div>
         <div class="primera-seccion-contenido">
@@ -50,16 +50,16 @@
                 </div>
     
                 <label for="nombre" class="form-label">Nombres:</label>
-                <input type="text" id="nombre" class="form-input" placeholder="Escriba su nombre">
+                <input type="text" id="nombre" class="form-input" placeholder="Escriba su nombre" required>
     
-                <label for="direccion" class="form-label">Dirección:</label>
-                <input type="text" class="form-input" id="direccion" placeholder="Escriba su direccion">
+                <label for="telefono" class="form-label">Telefono:</label>
+                <input type="number" class="form-input" id="telefono" placeholder="Escriba su telefono" required>
     
                 <label for="correo" class="form-label">Correo Electronico:</label>
-                <input type="email" class="form-input" id="correo" placeholder="Escriba su correo">
+                <input type="email" class="form-input" id="correo" placeholder="Escriba su correo" required>
     
                 <label for="mensaje" class="form-label">Mensaje:</label>
-                <textarea id="mensaje" class="form-textarea" placeholder="Aqui escriba su mensaje"></textarea>
+                <textarea id="mensaje" class="form-textarea" placeholder="Aqui escriba su mensaje" required></textarea>
     
                 <input type="submit" class="btn-submit" value="Enviar Consulta">
             </form>
